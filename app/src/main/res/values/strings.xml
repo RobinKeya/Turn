@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Turn</string>
+    <string name="new_routine">New Routine</string>
+    <string name="leave_habit">Leave Habit</string>
+    <string name="add_btn">Add Button</string>
+    <string name="new_habit">Create New Habit</string>
+    <string name="share_with">Share with Others ?</string>
+    <string name="days_num">Dedication Days</string>
+    <string name="create_habit_btn">Create</string>
+    <string name="desist_habit_btn">Create</string>
 </resources>
