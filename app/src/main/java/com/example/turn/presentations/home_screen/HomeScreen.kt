@@ -4,18 +4,14 @@ import android.annotation.SuppressLint
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.grid.GridCells
 import androidx.compose.foundation.lazy.grid.LazyVerticalGrid
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Place
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
-import androidx.compose.material3.CardElevation
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -23,6 +19,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.example.turn.R
+import com.example.turn.ui.theme.Typography
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
@@ -39,7 +36,8 @@ fun HomeScreen(onClick : (id: Int)->Unit) {
                     Column {
                         Image(imageVector = Icons.Default.Place,
                             contentDescription ="placeHolder" )
-                        Text(text = stringResource(id = R.string.new_routine))
+                        Text(text = stringResource(id = R.string.new_routine),
+                            style = Typography.titleLarge)
                     }
                 }
                 Card(
@@ -49,7 +47,8 @@ fun HomeScreen(onClick : (id: Int)->Unit) {
                     Column {
                         Image(imageVector = Icons.Default.Place,
                             contentDescription ="placeHolder" )
-                        Text(text = stringResource(id = R.string.leave_habit))
+                        Text(text = stringResource(id = R.string.leave_habit),
+                            style = Typography.titleLarge)
                     }
                 }
                 Card(
@@ -59,7 +58,8 @@ fun HomeScreen(onClick : (id: Int)->Unit) {
                     Column {
                         Image(imageVector = Icons.Default.Place,
                             contentDescription ="placeHolder" )
-                        Text(text = stringResource(id = R.string.new_routine))
+                        Text(text = stringResource(id = R.string.new_routine),
+                            style = Typography.titleLarge)
                     }
                 }
                 Card(
@@ -69,7 +69,8 @@ fun HomeScreen(onClick : (id: Int)->Unit) {
                     Column {
                         Image(imageVector = Icons.Default.Place,
                             contentDescription ="placeHolder" )
-                        Text(text = stringResource(id = R.string.new_routine))
+                        Text(text = stringResource(id = R.string.new_routine),
+                            style = Typography.titleLarge)
                     }
                 }
 

@@ -21,9 +21,8 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
+import com.example.turn.ui.theme.Typography
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
 @Composable
@@ -58,7 +57,7 @@ fun TopAppBar(title: String){
     Row(horizontalArrangement = Arrangement.Center,
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier.fillMaxWidth()){
-        Text(text = title)
+        Text(text = title,style = Typography.titleLarge)
     }
 }
 
@@ -72,6 +71,6 @@ fun Day(day: Int, dayCount: Int, onDayClick : (day: Int)->Unit) {
             .clickable { onDayClick(day) }
             .padding(4.dp)
     ) {
-        Text(text = day.toString(), style = TextStyle(fontSize = 24.sp))
+        Text(text = day.toString(), style = Typography.bodyLarge)
     }
 }

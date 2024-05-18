@@ -20,6 +20,7 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.example.turn.R
 import com.example.turn.domain.model.Habit
+import com.example.turn.ui.theme.Typography
 import java.lang.Integer.parseInt
 
 @SuppressLint("UnusedMaterial3ScaffoldPaddingParameter")
@@ -101,7 +102,7 @@ fun AddNewHabitScreen(
                     .padding(horizontal = 16.dp),
                 onClick = { addHabit(habit) }
             ) {
-                Text(text = stringResource(id = R.string.create_habit_btn))
+                Text(text = stringResource(id = R.string.create_habit_btn),style = Typography.bodyLarge)
             }
         }
     }
@@ -114,6 +115,6 @@ fun TopAppBar() {
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.Center
     ) {
-        Text(text = stringResource(id = R.string.new_habit))
+        Text(text = stringResource(id = R.string.new_habit),style = Typography.titleLarge)
     }
 }
