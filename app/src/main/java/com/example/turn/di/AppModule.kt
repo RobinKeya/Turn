@@ -2,10 +2,10 @@ package com.example.turn.di
 
 import android.content.Context
 import androidx.room.Room
-import com.example.turn.data.local.HabitDao
-import com.example.turn.data.local.HabitDatabase
-import com.example.turn.data.repository.HabitRepositoryImpl
-import com.example.turn.domain.repository.HabitRepository
+import com.example.turn.new_habit_feature.data.local.HabitDao
+import com.example.turn.new_habit_feature.data.local.HabitDatabase
+import com.example.turn.new_habit_feature.data.repository.HabitRepositoryImpl
+import com.example.turn.new_habit_feature.domain.repository.HabitRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -32,7 +32,7 @@ object AppModule {
         return habitDatabase.dao
     }
     @Provides
-    fun provideHabitRepository(habitDao: HabitDao): HabitRepository{
+    fun provideHabitRepository(habitDao: HabitDao): HabitRepository {
         return HabitRepositoryImpl(habitDao)
     }
 }

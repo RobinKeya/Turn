@@ -7,14 +7,14 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-import com.example.turn.data.local.PartialHabit
-import com.example.turn.presentations.habit_details.HabitDetailScreen
-import com.example.turn.presentations.habit_details.HabitDetailsViewModel
-import com.example.turn.presentations.home_screen.HomeScreen
-import com.example.turn.presentations.leave_habit.LeaveHabitScreen
-import com.example.turn.presentations.new_habits.AddNewHabitScreen
-import com.example.turn.presentations.new_habits.NewHabitViewModel
-import com.example.turn.presentations.new_habits.NewHabitsScreen
+import com.example.turn.new_habit_feature.data.local.PartialHabit
+import com.example.turn.composables.HabitDetailScreen
+import com.example.turn.new_habit_feature.presentations.habit_details.HabitDetailsViewModel
+import com.example.turn.composables.HomeScreen
+import com.example.turn.new_habit_feature.presentations.leave_habit.LeaveHabitScreen
+import com.example.turn.composables.AddNewHabitScreen
+import com.example.turn.new_habit_feature.presentations.new_habits.NewHabitViewModel
+import com.example.turn.composables.NewHabitsScreen
 
 @Composable
 fun Navigation(navHostController: NavHostController) {
